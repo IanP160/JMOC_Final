@@ -2748,11 +2748,11 @@ input, select, textarea {
 }
 
 .spotlight .image.recruit-bg {
-    background: url("img/Recruitimage.jpeg") center center / cover no-repeat;
+    background: url("../../images/Recruitimage.jpeg") center center / cover no-repeat;
 }
 
 .spotlight .image.joinUs-bg {
-    background: url("img/EchoGraingerPic.jpeg") center center / cover no-repeat;
+    background: url("../../images/EchoGraingerPic.jpeg") center center / cover no-repeat;
 }
 
 .spotlight .content {
