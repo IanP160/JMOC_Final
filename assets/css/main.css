@@ -3676,18 +3676,30 @@ input, select, textarea {
 /* Different banners for different pages */
 #banner.recruit {
     background: url("../../images/RecruitEcho.jpeg") center;
+	background-color: rgba(200,100,0,.5);
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 #banner.about_us {
     background: url("../../images/JoinUsEcho.webp") center;
+	    background-color: rgba(200,100,0,.5);
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 #banner.join_us {
     background: url("../../images/JoinUsEcho.webp") center;
+	    background-color: rgba(200,100,0,.5);
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 #banner.resources {
     background: url("../../images/RecruitEcho.jpeg") center;
+	    background-color: rgba(200,100,0,.5);
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 #banner h2 {
