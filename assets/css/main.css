@@ -9,7 +9,65 @@
 
 
 
+/* Team Section */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 0;
+        }
 
+        .team-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+
+        .team-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .team-info {
+            padding: 20px;
+        }
+
+        .team-info h3 {
+            margin: 0;
+            color: #212529;
+        }
+
+        .team-info p {
+            color: #666;
+        }
+
+        .team-links {
+            margin-top: 15px;
+        }
+
+        .team-links a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #fff;
+            background: #800020;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .team-links a:hover {
+            background: #5a1620;
+        }
 
 
 
