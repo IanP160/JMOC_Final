@@ -2733,10 +2733,6 @@ input, select, textarea {
 
 			}
 
-/* Spotlight */
-
-	/* Spotlight */
-
 .spotlight {
     align-items: center;
     display: flex;
@@ -2745,31 +2741,30 @@ input, select, textarea {
 
 .spotlight .image {
     order: 1;
-    border-radius: 0;
-    width: 40%;
+    width: 50%;
+    height: 100%;
     background-size: cover;
     background-position: center;
 }
 
 .spotlight .image.recruit-bg {
-    background: url("../../images/Recruitimage.jpeg") center center no-repeat;
+    background: url("img/Recruitimage.jpeg") center center / cover no-repeat;
 }
 
 .spotlight .image.joinUs-bg {
-    background: url("../../images/EchoGraingerPic.jpeg") center center no-repeat;
+    background: url("img/EchoGraingerPic.jpeg") center center / cover no-repeat;
 }
 
 .spotlight .content {
     background-color: #f8f9fa;
-    height: 85vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding: 2em;
+    padding: 3em;
     order: 2;
-    max-width: 48em;
-    width: 60%;
+    width: 50%;
 }
 
 .spotlight .content h2 {
@@ -2806,27 +2801,11 @@ input, select, textarea {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.spotlight .content .btn-primary:hover {
-    background-color: #5a1620;
-    border-color: #5a1620;
-    transition: 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 1280px) {
-    .spotlight .image {
-        width: 45%;
-    }
-    .spotlight .content {
-        width: 55%;
-    }
-}
-
 @media screen and (max-width: 980px) {
     .spotlight {
-        display: block;
-    }
-    .spotlight br {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
     .spotlight .image {
         width: 100%;
@@ -2834,9 +2813,8 @@ input, select, textarea {
     }
     .spotlight .content {
         padding: 4em 3em 2em 3em;
-        max-width: none;
-        text-align: center;
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -2845,6 +2823,7 @@ input, select, textarea {
         padding: 3em 2em 1em 2em;
     }
 }
+
 /* Wrapper */
 
 	.wrapper {
