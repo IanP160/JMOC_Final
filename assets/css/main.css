@@ -2735,131 +2735,116 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-	}
+	/* Spotlight */
 
-		.spotlight .image {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			border-radius: 0;
-			width: 40%;
-		}
+.spotlight {
+    align-items: center;
+    display: flex;
+    height: 85vh;
+}
 
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
+.spotlight .image {
+    order: 1;
+    border-radius: 0;
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+}
 
-		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			max-width: 48em;
-			width: 60%;
-		}
+.spotlight .image.recruit-bg {
+    background: url("../../images/Recruitimage.jpeg") center center no-repeat;
+}
 
-		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
+.spotlight .image.joinUs-bg {
+    background: url("../../images/EchoGraingerPic.jpeg") center center no-repeat;
+}
 
-		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
-		}
+.spotlight .content {
+    background-color: #f8f9fa;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 2em;
+    order: 2;
+    max-width: 48em;
+    width: 60%;
+}
 
-		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
-		}
+.spotlight .content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #212529;
+}
 
-		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
-		}
+.spotlight .content p {
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: 300;
+}
 
-		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
-		}
+.spotlight .content .btn-primary {
+    width: 50%;
+    background-color: #800020;
+    border-color: #800020;
+    font-size: 1.2rem;
+    padding: 0.75em;
+    text-align: center;
+    border-radius: 5px;
+}
 
-		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
-		}
+.spotlight:nth-child(2n) {
+    flex-direction: row-reverse;
+}
 
-		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
-		}
+.spotlight:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
 
-		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
-		}
+.spotlight:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
-		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
-		}
+.spotlight .content .btn-primary:hover {
+    background-color: #5a1620;
+    border-color: #5a1620;
+    transition: 0.3s ease-in-out;
+}
 
-		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
-		}
+@media screen and (max-width: 1280px) {
+    .spotlight .image {
+        width: 45%;
+    }
+    .spotlight .content {
+        width: 55%;
+    }
+}
 
-		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
-		}
+@media screen and (max-width: 980px) {
+    .spotlight {
+        display: block;
+    }
+    .spotlight br {
+        display: none;
+    }
+    .spotlight .image {
+        width: 100%;
+        height: 50vh;
+    }
+    .spotlight .content {
+        padding: 4em 3em 2em 3em;
+        max-width: none;
+        text-align: center;
+        width: 100%;
+    }
+}
 
-		@media screen and (max-width: 1280px) {
-
-			.spotlight .image {
-				width: 45%;
-			}
-
-			.spotlight .content {
-				width: 55%;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.spotlight {
-				display: block;
-			}
-
-				.spotlight br {
-					display: none;
-				}
-
-				.spotlight .image {
-					width: 100%;
-				}
-
-				.spotlight .content {
-					padding: 4em 3em 2em 3em ;
-					max-width: none;
-					text-align: center;
-					width: 100%;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
-			}
-
-		}
-
+@media screen and (max-width: 736px) {
+    .spotlight .content {
+        padding: 3em 2em 1em 2em;
+    }
+}
 /* Wrapper */
 
 	.wrapper {
