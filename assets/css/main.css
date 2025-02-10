@@ -3679,11 +3679,11 @@ input, select, textarea {
 }
 
 #banner.about_us {
-    background: url("../..//JoinUsEcho.webp") center;
+    background: url("../../images/JoinUsEcho.webp") center;
 }
 
 #banner.join_us {
-    background: url("../..//JoinUsEcho.webp") center;
+    background: url("../../images/JoinUsEcho.webp") center;
 }
 
 #banner.resources {
