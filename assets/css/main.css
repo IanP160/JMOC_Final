@@ -7,6 +7,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -28,6 +52,57 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+#logo {
+  display: inline-block;
+  width: 75px; /* Adjust this value to your desired width */
+  height: auto;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+.banner-area-home {
+	background: url("img/EchoBackground.jpeg") center;
+	background-color: rgba(200,100,0,.5);
+  	background-blend-mode: multiply;
+ 	background-size: cover;
+  	height: 100vh;
+  	position: relative;
+}
+
+.banner-area-joinEcho {
+	background: url("img/JoinUsEcho.webp") center;
+	background-color: rgba(200,100,0,.5);
+  	background-blend-mode: multiply;
+ 	background-size: cover;
+  	height: 100vh;
+  	position: relative;
+}
+
+.banner-area-members {
+	background: url("img/MembersEcho.jpeg") center;
+	background-color: rgba(200,100,0,.5);
+  	background-blend-mode: multiply;
+ 	background-size: cover;
+  	height: 100vh;
+  	position: relative;
+}
+
+.banner-area-recruit {
+	background: url("img/RecruitEcho.jpeg") center;
+	background-color: rgba(200,100,0,.5);
+  	background-blend-mode: multiply;
+ 	background-size: cover;
+  	height: 100vh;
+  	position: relative;
+}
+
 
 body {
 	line-height: 1;
