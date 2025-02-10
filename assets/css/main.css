@@ -68,7 +68,7 @@ footer, header, hgroup, menu, nav, section {
 # Banner
 --------------------------------------------------------------*/
 .banner-area-home {
-	background: url("img/EchoBackground.jpeg") center;
+	background: url("../img/EchoBackground.jpeg") center;
 	background-color: rgba(200,100,0,.5);
   	background-blend-mode: multiply;
  	background-size: cover;
@@ -3961,7 +3961,7 @@ input, select, textarea {
 
 #footer {
     padding: 6em 0 4em 0;
-    background: url("images/ECHOFooter.png") center;
+    background: url("../images/ECHOFooter.png") center;
     background-size: cover;
     position: relative;
     text-align: center;
