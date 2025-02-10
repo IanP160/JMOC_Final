@@ -3961,7 +3961,7 @@ input, select, textarea {
 
 #footer {
     padding: 6em 0 4em 0;
-    background: url("../images/ECHOFooter.png") center;
+    background: url("../../images/ECHOFooter.png") center;
     background-size: cover;
     position: relative;
     text-align: center;
