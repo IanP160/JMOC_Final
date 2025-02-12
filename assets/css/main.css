@@ -4063,6 +4063,36 @@ body.is-preload #banner:after {
 textarea.form-control {
     margin-bottom: 1em; /* Adds space below the message box */
 }
+/* Default: Keep multiple cards in a row for larger screens */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items */
+    gap: 1em; /* Adds spacing between cards */
+}
+
+/* Each card */
+.team-card {
+    flex: 1 1 calc(50% - 1em); /* Each card takes 50% width minus spacing */
+    max-width: calc(50% - 1em); /* Prevents stretching */
+}
+
+/* Mobile: Ensure two cards per row */
+@media screen and (max-width: 768px) {
+    .team-card {
+        flex: 1 1 45%; /* Slightly smaller width to fit two */
+        max-width: 45%;
+    }
+}
+
+/* Smallest screens (like very small phones) */
+@media screen and (max-width: 480px) {
+    .team-card {
+        flex: 1 1 100%; /* Back to one card per row for tiny screens */
+        max-width: 100%;
+    }
+}
+
 
 /* Landing */
 
