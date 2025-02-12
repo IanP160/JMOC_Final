@@ -3543,7 +3543,7 @@ input, select, textarea {
     -ms-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
     background: #ffffff; /* Updated to white */
-    height: 5em;
+    height: 4.5em;
     left: 0;
     line-height: 3em;
     position: fixed;
