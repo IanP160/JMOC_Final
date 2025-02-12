@@ -2673,15 +2673,20 @@ input, select, textarea {
     border-color: #800020 !important;
     color: white !important;
     font-size: 1rem;
-    padding: 0.75em 1.5em;
+    padding: 0.75em 1.5em; /* Keeps button size balanced */
     text-align: center;
     border-radius: 5px;
-    width: auto; /* Ensure it doesn’t stretch */
+    width: auto; /* Avoids unnecessary stretching */
     max-width: 80%;
-    margin-top: 1.5em; /* Add space between text and button */
-    align-self: center; /* Center the button */
+    margin-top: 1.5em;
+    align-self: center;
+    
+    display: flex; /* Use flexbox to center text */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    height: 2.5em; /* Ensures proper height */
+    line-height: normal; /* Prevents weird vertical alignment */
 }
-
 
 /* Ensure proper button hover behavior */
 .spotlight .btn.btn-primary:hover {
