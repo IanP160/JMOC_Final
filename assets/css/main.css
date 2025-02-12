@@ -3944,13 +3944,19 @@ body.is-preload #banner:after {
     border-radius: 5px;
     border: 1px solid #ccc;
     color: #000; /* Ensure text color is black */
+    background-color: #fff; /* Make sure background is white */
 }
 
 /* Fix for white-on-white placeholder text */
 .container-content-contact form input::placeholder,
 .container-content-contact form textarea::placeholder {
-    color: #333; /* Dark gray for better visibility */
-    opacity: 1;  /* Ensure placeholder is visible */
+    color: #555 !important; /* Dark gray for better visibility */
+    opacity: 1 !important; /* Ensure placeholder is fully visible */
+}
+
+/* Ensure contrast for accessibility */
+.container-content-contact form label {
+    color: #333 !important; /* Darken labels */
 }
 
 /* Submit Button */
