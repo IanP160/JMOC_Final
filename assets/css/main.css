@@ -3543,13 +3543,14 @@ input, select, textarea {
     -ms-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
     background: #ffffff; /* Updated to white */
-    height: 3em;
+    height: 5em;
     left: 0;
     line-height: 3em;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000; /* Updated z-index */
+
 }
 
 #header h1 {
@@ -3585,6 +3586,7 @@ input, select, textarea {
     right: 0;
     top: 0;
     color: #000000;
+	padding-top: 1.25em; 
 }
 
 #header nav > ul {
