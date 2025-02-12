@@ -3615,15 +3615,16 @@ input, select, textarea {
 }
 
 #header nav > ul > li > a.menuToggle:after {
-    background-image: url("images/bars.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
     content: '';
+    background-image: url("images/bars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     display: inline-block;
-    height: 3.75em;
-    width: 2em;
-    filter: invert(1); /* Make white bars black */
-    margin-left: 0.5em; /* Add spacing between text and bars */
+    height: 1.5em; /* Match text height */
+    width: 1.5em; /* Match text width */
+    filter: invert(1); /* Ensure visibility on white background */
+    margin-left: 0.5em; /* Space between text and icon */
+    vertical-align: middle; /* Align with text */
 }
 
 @media screen and (max-width: 736px) {
