@@ -3970,41 +3970,41 @@ body.is-preload #banner:after {
     }
 }
 
-/* ✅ FIXED: Contact Section */
 #contact .container-content-contact {
     display: flex;
-    flex-direction: row; /* Side-by-side layout */
+    flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    max-width: 900px;
-    margin: 4em auto; /* Center the section */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds soft shadow */
+    max-width: 1000px;
+    margin: 4em auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden; /* Prevents content from overflowing */
+    overflow: hidden;
 }
 
-/* Left Side (Maroon Background) */
+/* 🔹 Left Side: Contact Info (Maroon Background) */
 #contact .left {
-    background-color: #800020 !important; /* Maroon color */
-    color: white !important; /* Ensures text is readable */
+    background-color: #800020 !important; /* Maroon */
+    color: white !important;
     padding: 3em;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
 }
 
-/* Ensure Text and Links are White */
+/* 🔹 Text Styling */
 #contact .left h2 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     color: white !important;
 }
 
 #contact .left p {
     font-size: 1.1rem;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: white !important;
 }
 
@@ -4013,7 +4013,7 @@ body.is-preload #banner:after {
     text-decoration: underline;
 }
 
-/* Right Side (White Background Form) */
+/* 🔹 Right Side: Form (White Background) */
 #contact .right {
     background-color: white !important;
     padding: 3em;
@@ -4023,7 +4023,7 @@ body.is-preload #banner:after {
     justify-content: center;
 }
 
-/* Input Fields */
+/* 🔹 Form Fields */
 #contact .right .form-control {
     width: 100%;
     padding: 0.8em;
@@ -4033,7 +4033,7 @@ body.is-preload #banner:after {
     font-size: 1rem;
 }
 
-/* Keep Your Existing Button Styling */
+/* 🔹 Button (Keeping Your Existing Style) */
 #contact .right .btn-primary {
     background-color: #800020 !important;
     border-color: #800020 !important;
@@ -4042,18 +4042,17 @@ body.is-preload #banner:after {
     padding: 0.75em 1.5em;
     text-align: center;
     border-radius: 5px;
-    width: auto;
-    max-width: 100%;
+    width: 100%; /* Makes sure it's centered and full-width */
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* Button Hover Effect */
+/* 🔹 Button Hover Effect */
 #contact .right .btn-primary:hover {
     background-color: #c23028 !important;
 }
 
-/* Mobile Responsive Fixes */
+/* 🔹 Mobile Responsive Fixes */
 @media screen and (max-width: 768px) {
     #contact .container-content-contact {
         flex-direction: column; /* Stack vertically */
@@ -4061,8 +4060,20 @@ body.is-preload #banner:after {
 
     #contact .left,
     #contact .right {
-        width: 100%; /* Full width */
+        width: 100%;
         padding: 2em;
+        text-align: center;
+    }
+
+    #contact .right form {
+        width: 100%;
+    }
+
+    /* Make Button Full-Width on Mobile */
+    #contact .right .btn-primary {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
 
