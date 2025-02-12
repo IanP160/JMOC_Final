@@ -3722,7 +3722,7 @@ input, select, textarea {
 }
 
 #banner.resources {
-    background: url("../../images/RecruitEcho.jpeg") center;
+    background: url("../../images/Resources.jpeg") center;
 	    background-color: rgba(200,100,0,.5);
     background-blend-mode: multiply;
     background-size: cover;
