@@ -2860,13 +2860,12 @@ input, select, textarea {
 }
 
 .spotlight .content .btn-primary {
-    width: 50%;
-    background-color: #800020;
-    border-color: #800020;
-    font-size: 1.2rem;
-    padding: 0.75em;
+    width: auto; /* Allows button to fit naturally */
+    max-width: 80%; /* Prevents oversized buttons */
+    font-size: 1rem; /* Slightly smaller for mobile */
+    padding: 0.5em 1em; /* Adjusts padding */
     text-align: center;
-    border-radius: 5px;
+    margin: 1em auto; /* Ensures it is centered */
 }
 
 .spotlight:nth-child(2n) {
@@ -2885,16 +2884,18 @@ input, select, textarea {
     .spotlight {
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: auto; /* Remove fixed height for better responsiveness */
+        padding-bottom: 2em; /* Adds extra space below buttons */
     }
     .spotlight .image {
-        width: 100%;
-        height: 50vh;
+        width: 100%; /* Make image full-width */
+        height: 40vh; /* Reduce height to avoid large empty space */
     }
+
     .spotlight .content {
-        padding: 4em 3em 2em 3em;
         width: 100%;
-        text-align: center;
+        padding: 3em; /* Adds better spacing */
+        text-align: center; /* Centers text */
     }
 }
 
