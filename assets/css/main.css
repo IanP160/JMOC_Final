@@ -2668,25 +2668,39 @@ input, select, textarea {
 		}
 
 .spotlight .btn.btn-primary {
-    font-size: 0.75em; /* Decrease font size */
-    height: 2.5em; /* Reduce button height */
-    line-height: 2.5em; /* Keep text vertically centered */
-    padding: 0 1.5em; /* Adjust padding for smaller width */
+    font-size: 1em; /* Slightly increase font size for better visibility */
+    height: auto; /* Allow button height to adjust dynamically */
+    line-height: normal; /* Let text wrap naturally */
+    padding: 0.75em 1.5em; /* Better spacing inside the button */
     border-radius: 5px; /* Keep rounded corners */
-    text-align: center; /* Ensure text is centered */
-    display: inline-flex; /* Use flex to perfectly center text */
-    align-items: center; /* Aligns text vertically */
-    justify-content: center; /* Centers text horizontally */
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #800020 !important; /* Set background color */
+    border: 2px solid #800020 !important; /* Ensure border visibility */
+    color: white !important; /* Ensure text is readable */
+    opacity: 1 !important; /* Prevent fading */
+    visibility: visible !important; /* Ensure it's not hidden */
 }
 
+/* Ensure proper button hover behavior */
 .spotlight .btn.btn-primary:hover {
-    background-color: #c23028 !important; /* Darken on hover */
+    background-color: #c23028 !important;
 }
 
 .spotlight .btn.btn-primary:active {
-    background-color: #a82820 !important; /* Darken when clicked */
+    background-color: #a82820 !important;
 }
 
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .spotlight .btn.btn-primary {
+        width: 80%; /* Make button fit better on small screens */
+        max-width: 300px; /* Prevent it from being too wide */
+        margin: 1em auto; /* Center it properly */
+    }
+}
 /* Features */
 
 	.features {
@@ -2882,20 +2896,26 @@ input, select, textarea {
 
 @media screen and (max-width: 980px) {
     .spotlight {
-        display: flex;
-        flex-direction: column;
-        height: auto; /* Remove fixed height for better responsiveness */
+        flex-direction: column !important; /* Stack items vertically */
+        height: auto !important;
         padding-bottom: 2em; /* Adds extra space below buttons */
     }
+
     .spotlight .image {
-        width: 100%; /* Make image full-width */
-        height: 40vh; /* Reduce height to avoid large empty space */
+        width: 100% !important; /* Make images take full width */
+        height: 40vh !important; /* Reduce height to avoid large empty space */
+        background-size: cover !important;
     }
 
     .spotlight .content {
-        width: 100%;
-        padding: 3em; /* Adds better spacing */
-        text-align: center; /* Centers text */
+        width: 100% !important;
+        text-align: center;
+        padding: 2em;
+    }
+
+    /* Override alternating row order on mobile */
+    .spotlight:nth-child(2n) {
+        flex-direction: column !important;
     }
 }
 
