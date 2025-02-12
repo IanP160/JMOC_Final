@@ -2667,22 +2667,21 @@ input, select, textarea {
 
 		}
 
+/* Fix the button alignment */
 .spotlight .btn.btn-primary {
-    font-size: 1em; /* Slightly increase font size for better visibility */
-    height: auto; /* Allow button height to adjust dynamically */
-    line-height: normal; /* Let text wrap naturally */
-    padding: 0.75em 1.5em; /* Better spacing inside the button */
-    border-radius: 5px; /* Keep rounded corners */
+    background-color: #800020 !important;
+    border-color: #800020 !important;
+    color: white !important;
+    font-size: 1rem;
+    padding: 0.75em 1.5em;
     text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #800020 !important; /* Set background color */
-    border: 2px solid #800020 !important; /* Ensure border visibility */
-    color: white !important; /* Ensure text is readable */
-    opacity: 1 !important; /* Prevent fading */
-    visibility: visible !important; /* Ensure it's not hidden */
+    border-radius: 5px;
+    width: auto; /* Ensure it doesn’t stretch */
+    max-width: 80%;
+    margin-top: 1.5em; /* Add space between text and button */
+    align-self: center; /* Center the button */
 }
+
 
 /* Ensure proper button hover behavior */
 .spotlight .btn.btn-primary:hover {
@@ -2854,8 +2853,9 @@ input, select, textarea {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center everything inside */
     justify-content: center;
-    text-align: left;
+    text-align: center; /* Center text */
     padding: 3em;
     order: 2;
     width: 50%;
