@@ -4036,7 +4036,9 @@ body.is-preload #banner:after {
     }
 }
 
-
+textarea.form-control {
+    margin-bottom: 1em; /* Adds space below the message box */
+}
 
 /* Landing */
 
