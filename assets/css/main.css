@@ -2667,6 +2667,26 @@ input, select, textarea {
 
 		}
 
+.spotlight .btn.btn-primary {
+    font-size: 0.75em; /* Decrease font size */
+    height: 2.5em; /* Reduce button height */
+    line-height: 2.5em; /* Keep text vertically centered */
+    padding: 0 1.5em; /* Adjust padding for smaller width */
+    border-radius: 5px; /* Keep rounded corners */
+    text-align: center; /* Ensure text is centered */
+    display: inline-flex; /* Use flex to perfectly center text */
+    align-items: center; /* Aligns text vertically */
+    justify-content: center; /* Centers text horizontally */
+}
+
+.spotlight .btn.btn-primary:hover {
+    background-color: #c23028 !important; /* Darken on hover */
+}
+
+.spotlight .btn.btn-primary:active {
+    background-color: #a82820 !important; /* Darken when clicked */
+}
+
 /* Features */
 
 	.features {
