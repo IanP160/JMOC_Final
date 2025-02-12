@@ -3881,7 +3881,7 @@ body.is-preload #banner:after {
 /* CTA Section - Adjust to Support Contact Form */
 #cta {
     padding: 5em 0; /* Add spacing around it */
-    background-color: #800020; /* Burgundy Background */
+    background-color: #ffffff; /* White background */
     color: white; /* Keep text white */
 }
 
@@ -3908,7 +3908,7 @@ body.is-preload #banner:after {
 
 /* Left Side */
 .container-content-contact .left {
-    background: #800020; /* Keep it burgundy */
+    background: #712D3B; /* Keep it burgundy */
     color: white;
     padding: 3em;
     flex: 1;
@@ -3939,7 +3939,7 @@ body.is-preload #banner:after {
 
 /* Submit Button */
 .container-content-contact .btn-primary {
-    background-color: #800020;
+    background-color: #712D3B;
     border: none;
     color: white;
     padding: 0.75em 1.5em;
@@ -3947,6 +3947,11 @@ body.is-preload #banner:after {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    display: flex;  /* Flexbox for centering */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .container-content-contact .btn-primary:hover {
