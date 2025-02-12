@@ -2815,6 +2815,8 @@ input, select, textarea {
     align-items: center;
     display: flex;
     height: 85vh;
+    text-transform: none; /* Keeps text in original case */
+
 }
 
 .spotlight .image {
