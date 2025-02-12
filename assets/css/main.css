@@ -3616,13 +3616,14 @@ input, select, textarea {
 
 #header nav > ul > li > a.menuToggle:after {
     background-image: url("images/bars.svg");
-    background-position: right center;
+    background-position: center center;
     background-repeat: no-repeat;
     content: '';
     display: inline-block;
     height: 3.75em;
-    vertical-align: top;
     width: 2em;
+    filter: invert(1); /* Make white bars black */
+    margin-left: 0.5em; /* Add spacing between text and bars */
 }
 
 @media screen and (max-width: 736px) {
