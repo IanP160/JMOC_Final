@@ -2879,12 +2879,19 @@ input, select, textarea {
 }
 
 .spotlight .content .btn-primary {
-    width: auto; /* Allows button to fit naturally */
-    max-width: 80%; /* Prevents oversized buttons */
-    font-size: 1rem; /* Slightly smaller for mobile */
-    padding: 0.5em 1em; /* Adjusts padding */
+ background-color: #712D3B;
+    border: none;
+    color: white;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
     text-align: center;
-    margin: 1em auto; /* Ensures it is centered */
+    display: flex;  /* Flexbox for centering */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .spotlight:nth-child(2n) {
