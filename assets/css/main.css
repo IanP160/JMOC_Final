@@ -3920,6 +3920,7 @@ body.is-preload #banner:after {
     flex: 1;
     padding: 3em;
     min-width: 300px;
+
 }
 
 /* Form */
@@ -3935,6 +3936,14 @@ body.is-preload #banner:after {
     padding: 0.75em;
     border-radius: 5px;
     border: 1px solid #ccc;
+    color: #000; /* Ensure text color is black */
+}
+
+/* Fix for white-on-white placeholder text */
+.container-content-contact form input::placeholder,
+.container-content-contact form textarea::placeholder {
+    color: #333; /* Dark gray for better visibility */
+    opacity: 1;  /* Ensure placeholder is visible */
 }
 
 /* Submit Button */
