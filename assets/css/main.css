@@ -3878,205 +3878,92 @@ body.is-preload #banner:after {
     opacity: 1;
 }
 
-/* ✅ FIXED: CTA Section */
+/* CTA Section - Adjust to Support Contact Form */
 #cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 3em 0;
-    background-color: #800020; /* Ensure CTA has a proper background */
+    padding: 5em 0; /* Add spacing around it */
+    background-color: #800020; /* Burgundy Background */
+    color: white; /* Keep text white */
 }
 
-/* Inner CTA Container */
 #cta .inner {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 45em;
-    padding: 50px 2em; /* Ensures proper spacing */
-    margin: 0 auto;
-    color: white; /* Ensures text is readable */
+    flex-direction: column;
+    max-width: 100%; /* Allow full width */
+    padding: 2em; /* Adds spacing */
 }
 
-/* Text Area */
-#cta .inner header {
-    order: 1;
-    padding-right: 3em;
-    width: 70%;
-    text-align: left;
+#cta .content-section {
+    max-width: 1200px; /* Ensures good width on larger screens */
+    margin: 0 auto; /* Centers it */
 }
 
-/* Ensuring Text is Properly Styled */
-#cta .inner header p {
-    color: white;
-}
-
-/* CTA Actions (Buttons) */
-#cta .inner .actions {
-    order: 2;
-    width: 30%;
+/* Contact Section - Ensure Layout is Correct */
+.container-content-contact {
     display: flex;
-    justify-content: center;
-}
-
-/* Buttons */
-#cta .inner .actions .btn-primary {
-    background-color: white;
-    color: #800020;
-    font-size: 1rem;
-    padding: 0.75em 1.5em;
-    border-radius: 5px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Button Hover Effect */
-#cta .inner .actions .btn-primary:hover {
-    background-color: #c23028;
-    color: white;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 980px) {
-    #cta .inner {
-        flex-direction: column;
-        text-align: center;
-        max-width: 90%;
-    }
-
-    #cta .inner header {
-        padding-right: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    #cta .inner .actions {
-        width: 100%;
-        max-width: 20em;
-        margin: 1em auto;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    #cta .inner .actions {
-        max-width: none;
-        width: 100%;
-    }
-}
-
-#contact .container-content-contact {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 4em auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    flex-wrap: wrap;
+    background: white; /* White background for contrast */
+    border-radius: 10px;
     overflow: hidden;
 }
 
-/* 🔹 Left Side: Contact Info (Maroon Background) */
-#contact .left {
-    background-color: #800020 !important; /* Maroon */
-    color: white !important;
+/* Left Side */
+.container-content-contact .left {
+    background: #800020; /* Keep it burgundy */
+    color: white;
     padding: 3em;
-    width: 50%;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Right Side */
+.container-content-contact .right {
+    flex: 1;
+    padding: 3em;
+    min-width: 300px;
+}
+
+/* Form */
+.container-content-contact form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    gap: 1em;
 }
 
-/* 🔹 Text Styling */
-#contact .left h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1em;
-    color: white !important;
-}
-
-#contact .left p {
-    font-size: 1.1rem;
-    margin-bottom: 0.5em;
-    color: white !important;
-}
-
-#contact .left a {
-    color: white !important;
-    text-decoration: underline;
-}
-
-/* 🔹 Right Side: Form (White Background) */
-#contact .right {
-    background-color: white !important;
-    padding: 3em;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* 🔹 Form Fields */
-#contact .right .form-control {
+.container-content-contact form input,
+.container-content-contact form textarea {
     width: 100%;
-    padding: 0.8em;
-    margin-bottom: 1.2em;
+    padding: 0.75em;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
 }
 
-/* 🔹 Button (Keeping Your Existing Style) */
-#contact .right .btn-primary {
-    background-color: #800020 !important;
-    border-color: #800020 !important;
-    color: white !important;
-    font-size: 1rem;
+/* Submit Button */
+.container-content-contact .btn-primary {
+    background-color: #800020;
+    border: none;
+    color: white;
     padding: 0.75em 1.5em;
-    text-align: center;
+    font-size: 1rem;
     border-radius: 5px;
-    width: 100%; /* Makes sure it's centered and full-width */
     cursor: pointer;
-    transition: 0.3s;
+    text-align: center;
 }
 
-/* 🔹 Button Hover Effect */
-#contact .right .btn-primary:hover {
-    background-color: #c23028 !important;
+.container-content-contact .btn-primary:hover {
+    background-color: #660017;
 }
 
-/* 🔹 Mobile Responsive Fixes */
+/* Responsive Fixes */
 @media screen and (max-width: 768px) {
-    #contact .container-content-contact {
-        flex-direction: column; /* Stack vertically */
+    .container-content-contact {
+        flex-direction: column;
     }
 
-    #contact .left,
-    #contact .right {
+    .container-content-contact .left, 
+    .container-content-contact .right {
         width: 100%;
-        padding: 2em;
-        text-align: center;
-    }
-
-    #contact .right form {
-        width: 100%;
-    }
-
-    /* Make Button Full-Width on Mobile */
-    #contact .right .btn-primary {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
     }
 }
-
 
 /* Main */
 
