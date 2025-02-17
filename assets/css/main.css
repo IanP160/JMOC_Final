@@ -10,33 +10,29 @@
 
 
 /* Team Section */
-        .team-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 50px 0;
-        }
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards within the container */
+    gap: 20px; /* Space between cards */
+}
 
-        .team-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 250px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
+.team-card {
+    width: 300px; /* Fixed width for uniformity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    overflow: hidden; /* Ensures nothing spills out */
+    background: #FFF; /* White background */
+    text-align: center; /* Center-aligns the text */
+}
 
         .team-card:hover {
             transform: scale(1.05);
         }
 
     .team-card img {
-    width: 100%; /* Ensures the image fills the container */
-    height: 200px; /* Fixed height for uniformity */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Removes any space below the image */
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover the div without stretching */
 }
 
         .team-info {
