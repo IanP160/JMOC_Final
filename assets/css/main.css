@@ -3640,6 +3640,9 @@ input, select, textarea {
         font-size: 0.8em;
     }
 }
+#header{
+    height: 4.75em;
+}
 
 #header nav {
     height: inherit;
