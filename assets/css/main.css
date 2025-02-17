@@ -27,15 +27,17 @@
             transition: transform 0.3s ease-in-out;
         }
 
+
         .team-card:hover {
             transform: scale(1.05);
         }
 
-        .team-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
+    .team-card img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Removes any space below the image */
+}
 
         .team-info {
             padding: 20px;
