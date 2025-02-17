@@ -130,7 +130,7 @@ footer, , hgroup, menu, nav, section {
 }
 
 @media (max-width: 768px) {  // Adjusts styles for screens smaller than 768px wide
-    .logo {
+    #logo {
         height: 40px;  // Reduces the height on smaller screens
         margin: 5px auto;  // Centers the logo with reduced margin
         display: block;  // Ensures the logo is centered
