@@ -30,10 +30,19 @@
             transform: scale(1.05);
         }
 
-    .team-card img {
-    height: 300px; /* Fixed height for uniformity */
-    object-fit: cover; /* Cover the div without stretching */
+.image-container {
+    width: 100%; /* Full width of the card */
+    height: 300px; /* Fixed height for all images */
+    overflow: hidden; /* Ensures no overflow of the image */
 }
+
+.image-container img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    display: block; /* Removes bottom space/gap under the image */
+}
+
 
         .team-info {
             padding: 20px;
