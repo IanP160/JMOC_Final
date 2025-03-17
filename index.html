@@ -178,12 +178,35 @@
     }
 </script>
 
-<style>
-    .hidden { display: none; }
-    .service-form button:hover {
-        background: #90EE90 !important; /* Light Green Hover Effect */
+
+
+
+
+<script>
+    let currentIndex = 0;
+    const images = [
+        "images/gallery1.jpg", "images/gallery2.jpg", "images/gallery3.jpg",
+        "images/gallery4.jpg", "images/gallery5.jpg", "images/gallery6.jpg",
+        "images/gallery7.jpg", "images/gallery8.jpg", "images/gallery9.jpg",
+        "images/gallery10.jpg"
+    ];
+    
+    function changeImage(index) {
+        currentIndex = index;
+        document.getElementById("large-image").src = images[currentIndex];
     }
-</style>
+    
+    function prevSlide() {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        document.getElementById("large-image").src = images[currentIndex];
+    }
+    
+    function nextSlide() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        document.getElementById("large-image").src = images[currentIndex];
+    }
+</script>
+				
 
 <!-- Gallery Section -->
 <section id="gallery" class="wrapper style2 special">
