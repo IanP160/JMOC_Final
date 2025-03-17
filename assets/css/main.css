@@ -36,20 +36,26 @@
         border-radius: 5px;
         cursor: pointer;
     }
-    .gallery-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 24px;
-        border-radius: 5px;
-    }
-    .gallery-arrow.left { left: 10px; }
-    .gallery-arrow.right { right: 10px; }
+/* --- Fix Gallery Arrows (Remove Boxes) --- */
+.gallery-arrow {
+    background: none !important; /* Remove background */
+    border: none !important; /* Remove border */
+    font-size: 30px; /* Make arrow larger */
+    color: white; /* Keep visible */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.gallery-arrow.left {
+    left: 10px;
+}
+
+.gallery-arrow.right {
+    right: 10px;
+}
 
 
 
