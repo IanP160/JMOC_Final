@@ -26,34 +26,28 @@
         margin-top: 10px;
     }
 
-    .service-form {
-        max-width: 500px;
-        margin: 20px auto;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        text-align: left;
-    }
 
     .hidden { display: none; }
 
-    .service-form label {
-        display: block;
-        margin: 10px 0 5px;
-        font-weight: bold;
+    .service-form {
+        background: white;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
-
-    .service-form input, .service-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
+    .service-form h3, .service-form p, .service-form label {
+        color: black;
+    }
+    .service-form input, .service-form select, .service-form textarea {
+        background: white;
+        color: black;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
     }
-
     .service-form button {
-        background: #1B3A2B;
+        background: #800020;
         color: white;
         padding: 10px 15px;
         border: none;
@@ -62,11 +56,9 @@
         font-size: 16px;
         width: 100%;
     }
-
     .service-form button:hover {
         background: #90EE90;
     }
-</style>
 
 
 
