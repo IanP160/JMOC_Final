@@ -7,7 +7,43 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-<style>
+    .gallery-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .gallery-main {
+        position: relative;
+    }
+    .gallery-main img {
+        width: 400px;
+        height: auto;
+    }
+    .gallery-thumbnails {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .thumbnail {
+        width: 100px;
+        cursor: pointer;
+    }
+    .gallery-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .gallery-arrow.left { left: 10px; }
+    .gallery-arrow.right { right: 10px; }
+
+
+
     /* Mega Form Styles */
     #mega-form {
         text-align: center;
