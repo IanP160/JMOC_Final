@@ -2963,7 +2963,7 @@ input, select, textarea {
 }
 
 .spotlight .content .btn-primary {
- background-color: #712D3B;
+ background-color: #1B3A2B;
     border: none;
     color: white;
     padding: 0.75em 1.5em;
@@ -3053,7 +3053,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #712D3B;
+			background-color: #1B3A2B;
 			color: #F1EFE7;
 		}
 
@@ -4002,7 +4002,7 @@ body.is-preload #banner:after {
 
 /* Left Side */
 .container-content-contact .left {
-    background: #712D3B; /* Keep it burgundy */
+    background: #1B3A2B; /* Keep it burgundy */
     color: white;
     padding: 3em;
     flex: 1;
@@ -4048,7 +4048,7 @@ body.is-preload #banner:after {
 
 /* Submit Button */
 .container-content-contact .btn-primary {
-    background-color: #712D3B;
+    background-color: #1B3A2B;
     border: none;
     color: white;
     padding: 0.75em 1.5em;
@@ -4064,7 +4064,7 @@ body.is-preload #banner:after {
 }
 
 .container-content-contact .btn-primary:hover {
-    background-color: #660017;
+    background-color: #4CAF50;
 }
 
 /* Responsive Fixes */
