@@ -59,6 +59,8 @@
     padding: 40px 20px;
 }
 
+.hidden { display: none; }
+
 #service-select {
     width: 60%;
     max-width: 400px;
