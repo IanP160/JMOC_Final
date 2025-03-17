@@ -53,58 +53,86 @@
 
 
 
-    /* Mega Form Styles */
-    #mega-form {
-        text-align: center;
-        padding: 40px 20px;
-    }
+/* Mega Form Styles */
+#mega-form {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-    #service-select {
-        width: 60%;
-        max-width: 400px;
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 2px solid #1B3A2B;
-        background-color: white;
-        color: black;
-        margin-top: 10px;
-    }
+#service-select {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #1B3A2B;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+}
 
+/* General form styles */
+.service-form {
+    background: white !important;
+    color: black !important;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
 
-    .hidden { display: none; }
+/* Ensure form labels and text are readable */
+.service-form h3, .service-form p, .service-form label {
+    color: black !important;
+    font-weight: bold;
+    font-size: 18px; /* Increased text size */
+    line-height: 1.5;
+}
 
-    .service-form {
-        background: white;
-        color: black;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .service-form h3, .service-form p, .service-form label {
-        color: black;
-    }
-    .service-form input, .service-form select, .service-form textarea {
-        background: white;
-        color: black;
-        border: 1px solid #ccc;
-        padding: 10px;
-        width: 100%;
-    }
-    .service-form button {
-        background: #800020;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        width: 100%;
-    }
-    .service-form button:hover {
-        background: #90EE90;
-    }
+/* Fix form input fields */
+.service-form input, .service-form select, .service-form textarea {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc;
+    padding: 12px; /* Slightly increased padding */
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
 
+/* Fix select dropdown styling */
+.service-form select {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    appearance: none; /* Removes default arrow styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Prevent text from overlapping dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+/* Improve button styling */
+.service-form button {
+    background: #800020;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+.service-form button:hover {
+    background: #90EE90;
+}
 
 
 /* Team Section */
